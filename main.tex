@@ -1,0 +1,78 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[top = 1.6cm, bottom = 1.6cm, left = 1cm, right = 1.5cm]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{indentfirst,enumitem}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{scrextend}
+\usepackage{comment}
+\usepackage{soul}
+\usepackage{tikz,tkz-tab}
+\usepackage{lscape}
+\usepackage{float,lscape}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{titling}
+\usepackage{import}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{empheq}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\arabic{section}.\arabic{subsection}}
+
+\hypersetup{
+    colorlinks=true,% make the links colored
+}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+
+\pagestyle{fancy}
+\fancyhead[r]{Nhat Huy}
+\fancyhead[c]{\bfseries DSP}
+\fancyhead[l]{\today}
+\renewcommand{\headrulewidth}{0.2pt}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+
+
+\begin{titlepage}
+    \centering
+    \vspace*{1in}
+
+    {\LARGE \bfseries Digital Signal Processing}\\[1.5cm]
+
+    {\large Vu Nhat Huy}\\[0.5cm]
+    {\large Faculty of Electrical and Electronics Engineering}\\
+    {\large Department of Telecommunications Engineering}\\
+    {\large Ho Chi Minh City University of Technology}\\
+    {\large Contact: \href{mailto:huy.vunhat108@hcmut.edu.vn}{\it huy.vunhat108@hcmut.edu.vn}}\\[2cm]
+
+    {\large Ngay 29 thang 8 nam 2025}
+
+    \vfill
+\end{titlepage}
+{
+  \hypersetup{linkcolor=[RGB]{236, 16, 145}}
+  \tableofcontents
+  \thispagestyle{empty}
+}
+\newpage
+\setcounter{page}{1}
+\import{chap}{chap1.tex}
+\newpage
+%\import{chap}{index.tex}
+\end{document}
